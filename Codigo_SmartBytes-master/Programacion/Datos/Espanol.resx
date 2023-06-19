@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnActualizar" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="btnAdministradores" xml:space="preserve">
+    <value>Administradores</value>
+  </data>
+  <data name="btnAgregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="btnAsociar" xml:space="preserve">
+    <value>Asociar</value>
+  </data>
+  <data name="btnDesasociar" xml:space="preserve">
+    <value>Desasociar</value>
+  </data>
+  <data name="btnDiagnosticos" xml:space="preserve">
+    <value> Historial de diagnosticos</value>
+  </data>
+  <data name="btnEliminar" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="btnEnviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="btnInfo" xml:space="preserve">
+    <value>Mi información</value>
+  </data>
+  <data name="btnIniciar" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="btnIniciarChat" xml:space="preserve">
+    <value>Iniciar chat</value>
+  </data>
+  <data name="btnMedicos" xml:space="preserve">
+    <value>Médicos</value>
+  </data>
+  <data name="btnModificar" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="btnPacientes" xml:space="preserve">
+    <value>Pacientes</value>
+  </data>
+  <data name="btnPatologias" xml:space="preserve">
+    <value>Patologías</value>
+  </data>
+  <data name="btnRC" xml:space="preserve">
+    <value>Realizar consulta</value>
+  </data>
+  <data name="btnSalir" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="btnSintomas" xml:space="preserve">
+    <value>Síntomas</value>
+  </data>
+  <data name="btnSolicitudes" xml:space="preserve">
+    <value>Solicitudes de chat</value>
+  </data>
+  <data name="btnVolver" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="lblAsociarSP" xml:space="preserve">
+    <value>Asociar síntomas y patologías</value>
+  </data>
+  <data name="lblBienvenido" xml:space="preserve">
+    <value>¡Bienvenido!</value>
+  </data>
+  <data name="lblBuenaJornada" xml:space="preserve">
+    <value>Que tenga buena jornada,</value>
+  </data>
+  <data name="lblCalle" xml:space="preserve">
+    <value>Calle:</value>
+  </data>
+  <data name="lblCedula" xml:space="preserve">
+    <value>CI:</value>
+  </data>
+  <data name="lblCodigo" xml:space="preserve">
+    <value>Código:</value>
+  </data>
+  <data name="lblContraseña" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="lblDiagnostico" xml:space="preserve">
+    <value>Diagnóstico primario</value>
+  </data>
+  <data name="lblDobleClick" xml:space="preserve">
+    <value>(Debes hacer doble click para iniciar el chat)</value>
+  </data>
+  <data name="lblEspecialidad" xml:space="preserve">
+    <value>Especialidad:</value>
+  </data>
+  <data name="lblEspecialista" xml:space="preserve">
+    <value>Especialista:</value>
+  </data>
+  <data name="lblEsquina" xml:space="preserve">
+    <value>Esquina:</value>
+  </data>
+  <data name="lblGestionAdmins" xml:space="preserve">
+    <value>Gestion de administradores</value>
+  </data>
+  <data name="lblGestionMedicos" xml:space="preserve">
+    <value>Gestion de médicos</value>
+  </data>
+  <data name="lblGestionPacientes" xml:space="preserve">
+    <value>Gestion de pacientes</value>
+  </data>
+  <data name="lblGestionPatologias" xml:space="preserve">
+    <value>Gestión de patologías</value>
+  </data>
+  <data name="lblGestionSintomas" xml:space="preserve">
+    <value>Gestion de síntomas</value>
+  </data>
+  <data name="lblGravedad" xml:space="preserve">
+    <value>Gravedad:</value>
+  </data>
+  <data name="lblMedico" xml:space="preserve">
+    <value>Medico:</value>
+  </data>
+  <data name="lblNacimiento" xml:space="preserve">
+    <value>Nacimiento:</value>
+  </data>
+  <data name="lblNombre" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lblNum" xml:space="preserve">
+    <value>Número:</value>
+  </data>
+  <data name="lblPatologia" xml:space="preserve">
+    <value>Patología:</value>
+  </data>
+  <data name="lblPatologiaFinal" xml:space="preserve">
+    <value>Patología final:</value>
+  </data>
+  <data name="lblPrimApe" xml:space="preserve">
+    <value>1er apellido:</value>
+  </data>
+  <data name="lblSegApe" xml:space="preserve">
+    <value>2do apellido:</value>
+  </data>
+  <data name="lblSexo" xml:space="preserve">
+    <value>Sexo:</value>
+  </data>
+  <data name="lblSintoma" xml:space="preserve">
+    <value>Síntomas</value>
+  </data>
+  <data name="lblSolicitudes" xml:space="preserve">
+    <value>Solicitudes de chat</value>
+  </data>
+  <data name="lblTel" xml:space="preserve">
+    <value>Teléfono:</value>
+  </data>
+  <data name="lblUsuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="msg4Consultas" xml:space="preserve">
+    <value>Error: Solo puedes realizar un máximo de 4 consultas por día.</value>
+  </data>
+  <data name="msgApellidoNumeros" xml:space="preserve">
+    <value>Error: El apellido no puede contener números.</value>
+  </data>
+  <data name="msgAsociadoExito" xml:space="preserve">
+    <value>Se ha asociado con éxito!</value>
+  </data>
+  <data name="msgAtencion" xml:space="preserve">
+    <value>Atención</value>
+  </data>
+  <data name="msgCedulaIncorrecta" xml:space="preserve">
+    <value>Error: La cédula ingresada es incorrecta.</value>
+  </data>
+  <data name="msgCedulaNoCoincide" xml:space="preserve">
+    <value>Error: La cédula no coincide con la de un usuario ingresado.</value>
+  </data>
+  <data name="msgContraseñaCaracteres" xml:space="preserve">
+    <value>Error: La contraseña debe tener un mínimo de 8 caracteres.</value>
+  </data>
+  <data name="msgDatosActualizados" xml:space="preserve">
+    <value>Datos modificados correctamente!</value>
+  </data>
+  <data name="msgDesasociadoExito" xml:space="preserve">
+    <value>Se ha desasociado con éxito!</value>
+  </data>
+  <data name="msgDosSintomas" xml:space="preserve">
+    <value>Error: Debes seleccionar un mínimo de 2 síntomas.</value>
+  </data>
+  <data name="msgErrorAsociar" xml:space="preserve">
+    <value>Error: Ocurrió un problema al intentar asociar.</value>
+  </data>
+  <data name="msgErrorDesasociar" xml:space="preserve">
+    <value>Error: Ocurrió un problema al intentar desasociar.</value>
+  </data>
+  <data name="msgErrorDiagnostico" xml:space="preserve">
+    <value>Error: Se produjo un problema al intenar obtener el diagnóstico.</value>
+  </data>
+  <data name="msgErrorEliminar" xml:space="preserve">
+    <value>Error: Ocurrió un problema al eliminar.</value>
+  </data>
+  <data name="msgErrorEliminarPatologia" xml:space="preserve">
+    <value>Error: Ocurrió un problema al eliminar la patología.</value>
+  </data>
+  <data name="msgErrorEliminarSintoma" xml:space="preserve">
+    <value>Error: Ocurrió un problema al eliminar el síntoma</value>
+  </data>
+  <data name="msgErrorEliminarUsuario" xml:space="preserve">
+    <value>Error: Ocurrió un problema al eliminar el usuario.</value>
+  </data>
+  <data name="msgErrorEnviarMensaje" xml:space="preserve">
+    <value>Error: Ocurrió un problema al enviar el mensaje.</value>
+  </data>
+  <data name="msgErrorIngresarPatologia" xml:space="preserve">
+    <value>Error: Ocurrió un problema al ingresar la patología.</value>
+  </data>
+  <data name="msgErrorIngresarSintoma" xml:space="preserve">
+    <value>Error: Ocurrió un problema al ingresar el síntoma.</value>
+  </data>
+  <data name="msgErrorIngresarUsuario" xml:space="preserve">
+    <value>Error: Ocurrió un problema al ingresar el usuario.</value>
+  </data>
+  <data name="msgErrorIniciar" xml:space="preserve">
+    <value>Error: La cédula y la contraseña no coinciden con ningún usuario.</value>
+  </data>
+  <data name="msgErrorInsertar" xml:space="preserve">
+    <value>Error: Ocurrió un problema al insertar.</value>
+  </data>
+  <data name="msgErrorModificar" xml:space="preserve">
+    <value>Error: Ocurrió un problema al modificar.</value>
+  </data>
+  <data name="msgErrorModificarPatologia" xml:space="preserve">
+    <value>Error: Ocurrió un problema al modificar la patología.</value>
+  </data>
+  <data name="msgErrorModificarSintoma" xml:space="preserve">
+    <value>Error: Ocurrió un problema al modificar el síntoma.</value>
+  </data>
+  <data name="msgErrorModificarUsuario" xml:space="preserve">
+    <value>Error: Ocurrió un problema al modificar el usuario.</value>
+  </data>
+  <data name="msgErrorRealizarConsulta" xml:space="preserve">
+    <value>Error: Ocurrió un problema al intentar realizar la consulta.</value>
+  </data>
+  <data name="msgErrorTabla" xml:space="preserve">
+    <value>Error: Ocurrió un problema al obtener la información de la tabla.</value>
+  </data>
+  <data name="msgErrorValores" xml:space="preserve">
+    <value>Error: Debes seleccionar los valores.</value>
+  </data>
+  <data name="msgGravedadMenor5" xml:space="preserve">
+    <value>Error: La gravedad debe ser un número entre el 1 y el 5.</value>
+  </data>
+  <data name="msgIngresarCedula" xml:space="preserve">
+    <value>Error: Debes ingresar la CI.</value>
+  </data>
+  <data name="msgIngresarContraseña" xml:space="preserve">
+    <value>Error: Debe ingresar una contraseña.</value>
+  </data>
+  <data name="msgIngresePatologia" xml:space="preserve">
+    <value>Ingrese una patología</value>
+  </data>
+  <data name="msgIngreseSintoma" xml:space="preserve">
+    <value>Ingrese un síntoma</value>
+  </data>
+  <data name="msgMaximo8Sintomas" xml:space="preserve">
+    <value>Puedes seleccionar un máximo de 8 síntomas.</value>
+  </data>
+  <data name="msgNoAsociado" xml:space="preserve">
+    <value>Error: El síntoma no esá asociado.</value>
+  </data>
+  <data name="msgNombreNumeros" xml:space="preserve">
+    <value>Error: El nombre no puede contener números.</value>
+  </data>
+  <data name="msgNombreSintoma" xml:space="preserve">
+    <value>Error: Debes ingresar el nombre del síntoma.</value>
+  </data>
+  <data name="msgNoRepetirCedula" xml:space="preserve">
+    <value>Error: La cédula no se puede repetir con la de otro usuario.</value>
+  </data>
+  <data name="msgNoRepetirMail" xml:space="preserve">
+    <value>Error: El mail no se puede repetir con el de otro usuario.</value>
+  </data>
+  <data name="msgPatologiaEliminada" xml:space="preserve">
+    <value>Patología eliminada con éxito!</value>
+  </data>
+  <data name="msgPatologiaIngresada" xml:space="preserve">
+    <value>Patología ingresada con éxito!</value>
+  </data>
+  <data name="msgPatologiaModificada" xml:space="preserve">
+    <value>Patología modificada con éxito!</value>
+  </data>
+  <data name="msgPatologiaNoIngresada" xml:space="preserve">
+    <value>Error: La patología que intentas modificar no está ingresada.</value>
+  </data>
+  <data name="msgPatologiaYaIngresada" xml:space="preserve">
+    <value>Error: Ya existe una patología con ese nombre.</value>
+  </data>
+  <data name="msgRellenarCampos" xml:space="preserve">
+    <value>Error: Debes rellenar todos los campos.</value>
+  </data>
+  <data name="msgRellenarCodigo" xml:space="preserve">
+    <value>Error: Debes ingresar el código.</value>
+  </data>
+  <data name="msgSalirApp" xml:space="preserve">
+    <value>¿Estás seguro de que quieres salir de la alpicación?</value>
+  </data>
+  <data name="msgSalirChat" xml:space="preserve">
+    <value>¿Estás seguro de que quieres salir de la aplicación? Si lo haces, no podrás volver a entrar al chat.</value>
+  </data>
+  <data name="msgSeguroAgregarPatologia" xml:space="preserve">
+    <value>¿Seguro que desea agregar la patología?</value>
+  </data>
+  <data name="msgSeguroAgregarSintoma" xml:space="preserve">
+    <value>¿Seguro que desea agregar el síntoma?</value>
+  </data>
+  <data name="msgSeguroAgregarUsuario" xml:space="preserve">
+    <value>¿Seguro que desea agregar al usuario?</value>
+  </data>
+  <data name="msgSeguroAsociar" xml:space="preserve">
+    <value>¿Seguro que desea asociar?</value>
+  </data>
+  <data name="msgSeguroDesasociar" xml:space="preserve">
+    <value>¿Seguro que desea desasociar?</value>
+  </data>
+  <data name="msgSeguroEliminarPatologia" xml:space="preserve">
+    <value>¿Seguro que desea eliminar la patología?</value>
+  </data>
+  <data name="msgSeguroEliminarSintoma" xml:space="preserve">
+    <value>¿Seguro que desea eliminar el síntoma?</value>
+  </data>
+  <data name="msgSeguroEliminarUsuario" xml:space="preserve">
+    <value>¿Seguro que desea eliminar al usuario?</value>
+  </data>
+  <data name="msgSeguroModificarInfo" xml:space="preserve">
+    <value>¿Seguro que desea modificar su información?</value>
+  </data>
+  <data name="msgSeguroModificarPatologia" xml:space="preserve">
+    <value>¿Seguro que desea modificar la patología?</value>
+  </data>
+  <data name="msgSeguroModificarSintoma" xml:space="preserve">
+    <value>¿Seguro que desea modificar el síntoma?</value>
+  </data>
+  <data name="msgSeguroModificarUsuario" xml:space="preserve">
+    <value>¿Seguro que desea modificar al usuario?</value>
+  </data>
+  <data name="msgSexo" xml:space="preserve">
+    <value>Error: El sexo ingresado es incorrecto.</value>
+  </data>
+  <data name="msgSintomaEliminado" xml:space="preserve">
+    <value>Síntoma eliminado con éxito!</value>
+  </data>
+  <data name="msgSintomaIngresado" xml:space="preserve">
+    <value>Síntoma ingresado con éxito!</value>
+  </data>
+  <data name="msgSintomaModificado" xml:space="preserve">
+    <value>Síntoma modificado con éxito!</value>
+  </data>
+  <data name="msgSintomaNoIngresado" xml:space="preserve">
+    <value>Error: El síntoma que intentas modificar no está ingresado.</value>
+  </data>
+  <data name="msgSintomaYaIngresado" xml:space="preserve">
+    <value>Error: El síntoma ya está ingresado.</value>
+  </data>
+  <data name="msgUsuarioEliminadoExito" xml:space="preserve">
+    <value>Usuario eliminado con éxito!</value>
+  </data>
+  <data name="msgUsuarioIngresado" xml:space="preserve">
+    <value>Usuario ingresado con éxito!</value>
+  </data>
+  <data name="msgUsuarioModificado" xml:space="preserve">
+    <value>Usuario modificado con éxito!</value>
+  </data>
+  <data name="msgYaAsociado" xml:space="preserve">
+    <value>Error: El síntoma ya se encuentra asociado a la patología ingresada.</value>
+  </data>
+</root>

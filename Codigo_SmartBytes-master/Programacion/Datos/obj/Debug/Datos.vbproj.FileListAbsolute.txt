@@ -1,0 +1,11 @@
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\bin\Debug\Datos.dll
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\bin\Debug\Datos.pdb
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\bin\Debug\Datos.xml
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.Espanol.resources
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.Ingles.resources
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.Resources.resources
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.vbproj.GenerateResource.cache
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.vbproj.CoreCompileInputs.cache
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.dll
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.xml
+C:\Users\Smac\Source\Repos\ESI-Buceo\Codigo_SmartBytes\Programacion\Datos\obj\Debug\Datos.pdb

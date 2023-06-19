@@ -1,0 +1,19 @@
+create role paciente;
+grant select, update on medicapp.paciente to 'paciente';
+grant select, update on medicapp.usuario to 'paciente';
+grant select, insert on medicapp.mensajechat to 'paciente';
+grant select, insert on medicapp.tiene to 'paciente';
+
+create role administrador;
+grant update, delete, select, insert on medicapp.paciente to 'administrador';
+grant update, delete, select, insert on medicapp.medico to 'administrador';
+grant update, delete, select, insert on medicapp.administrador to 'administrador';
+grant update, delete, select, insert on medicapp.usuario to 'administrador';
+grant update, delete, select, insert on medicapp.patologia to 'administrador';
+grant update, delete, select, insert on medicapp.sintoma to 'administrador';
+grant update, delete, select, insert on medicapp.asociado to 'administrador';
+
+create role medico;
+grant select, update on medicapp.medico to 'medico';
+grant select, update on medicapp.usuario to 'medico';
+grant select, insert on medicapp.mensajechat to 'medico';

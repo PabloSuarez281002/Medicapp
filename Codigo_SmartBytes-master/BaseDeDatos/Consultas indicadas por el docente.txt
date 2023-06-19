@@ -1,0 +1,85 @@
+-- Segunda entrega
+
+-- Consulta 1
+select concat(patologia.NombrePatologia, " ", count(NombrePatologia), " veces") as 'Cantidad de veces diagnosticada' from diagnostico 
+inner join patologia on diagnostico.codigopatologiaprimaria = patologia.codigopatologia group by patologia.codigopatologia;
+
+-- consulta 2
+select usuario.primernombre as 'Nombre', usuario.primerapellido as 'Apellido', 
+recibe.codigodiagnostico as 'Código diagnóstico', patologia.nombrepatologia as 'Nombre de la patología' 
+from usuario inner join recibe on usuario.ci = recibe.cipaciente 
+inner join diagnostico on diagnostico.codigodiagnostico=recibe.codigodiagnostico 
+inner join patologia on patologia.codigopatologia=diagnostico.codigopatologiaprimaria order by usuario.primernombre;
+
+-- consulta 3
+select count(codigodiagnostico) as 'Cantidad de consultas' from diagnostico where fechadiagnostico=curdate();
+
+-- Tercera entrega
+
+-- Consulta 1
+select concat(u.primernombre, " ", u.primerapellido) as Nombre from usuario u 
+inner join medico m on u.ci=m.ciMedico
+inner join atiende a on a.ciMedico=u.ci 
+inner join diagnostico d on a.codigodiagnostico = d.codigodiagnostico
+where m.especialidad='cardiólogo' and d.fechadiagnostico between (curdate() - interval 30 day) and curdate()
+group by u.ci
+having count(u.ci) > 
+any(select count(u.ci) from usuario u 
+inner join medico m on u.ci=m.ciMedico
+inner join atiende a on a.ciMedico=u.ci 
+inner join diagnostico d on a.codigodiagnostico = d.codigodiagnostico
+where m.especialidad='pediatra' and d.fechadiagnostico between (curdate() - interval 30 day) and curdate());
+
+-- Consulta 2
+select count(CodigoDiagnostico) as 'Cantidad de diagnósticos', case when FechaDiagnostico between '2020-08-01' and '2020-08-31' then "Agosto" end as 'Mes'
+from diagnostico 
+where FechaDiagnostico between '2020-08-01' and '2020-08-31'
+union select count(CodigoDiagnostico) as 'Cantidad de diagnósticos', case when FechaDiagnostico between '2020-09-01' and '2020-09-30' then "Setiembre" end as 'Mes'
+from diagnostico 
+where FechaDiagnostico between '2020-09-01' and '2020-09-31'
+union select count(CodigoDiagnostico) as 'Cantidad de diagnósticos', case when FechaDiagnostico between '2020-10-01' and '2020-10-31' then "Octubre" end as 'Mes'
+from diagnostico 
+where FechaDiagnostico between '2020-10-01' and '2020-10-31';
+
+-- Consulta 3
+select p.nombrepatologia from patologia p 
+inner join asociado a on p.codigopatologia=a.codigopatologia 
+inner join sintoma s on s.codigosintoma=a.codigosintoma
+group by p.codigopatologia 
+having group_concat(s.nombresintoma separator ", ") not like '%Fiebre%' 
+or group_concat(s.nombresintoma separator ", ") not like '%dolor de garganta%';
+
+-- Consulta 4
+select p.NombrePatologia, count(d.codigoPatologiaPrimaria) as 'Cantidad de veces diagnósticada' 
+from diagnostico d inner join patologia p on d.codigoPatologiaPrimaria=p.codigopatologia
+where d.fechadiagnostico between (curdate() - interval 30 day) and curdate()
+group by d.CodigoPatologiaPrimaria having count(d.codigoPatologiaPrimaria)>2;
+
+-- Consulta 5
+select u.Ci, u.PrimerNombre, u.PrimerApellido, u.SegundoApellido, u.Sexo, u.Telefono, u.Calle, u.Esquina, 
+u.NumeroPuerta, u.FechaNacimiento, ifnull(d.codigodiagnostico, 'Sin registro') as 'Código del diagnóstico', 
+ifnull(d.codigopatologiaprimaria, 'Sin registro') as 'Código de la patología primaria', 
+ifnull(d.codigopatologiafinal, 'Sin registro') as 'Código de la patología final', 
+ifnull(d.fechadiagnostico, 'Sin registro') as 'Fecha del diagnóstico' from usuario u 
+inner join paciente p on p.ciPaciente=u.ci
+left join recibe r on p.ciPaciente=r.ciPaciente
+left join diagnostico d on d.codigodiagnostico=r.codigodiagnostico;
+
+-- Consulta 6
+select p.nombrepatologia
+from diagnostico d
+inner join patologia p on d.codigopatologiaprimaria = p.codigopatologia
+group by p.codigopatologia
+having count(*)>=ALL(select count(*)
+from diagnostico d
+group by d.codigopatologiaprimaria);
+
+-- Consulta 7 (vista)
+create view Consultas_Pacientes as 
+select u.primernombre, u.primerapellido, d.codigodiagnostico,
+d.codigopatologiaprimaria, d.codigopatologiafinal, d.fechadiagnostico 
+from diagnostico d inner join recibe r on r.codigodiagnostico=d.codigodiagnostico 
+inner join usuario u on u.ci=r.ciPaciente
+where u.sexo='Masculino' and d.FechaDiagnostico between (curdate() - interval 7 day) and curdate();
+create user usuarioConsulta identified by '';
+grant select on medicapp.consultas_pacientes to usuarioConsulta;
